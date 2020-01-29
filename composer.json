@@ -23,6 +23,9 @@
     "symfony/process": "^4.2|^5.0",
     "symfony/http-client": "^4.2|^5.0"
   },
+  "require-dev": {
+    "orchestra/testbench" : "^4.0"
+  },
   "extra": {
     "branch-alias": {
       "dev-master": "0.6.x-dev"

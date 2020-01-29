@@ -1,0 +1,40 @@
+{
+    "name": "techquity/some-new-module",
+    "description": "A Laravel extension that enables Google's Tag Manager.",
+    "authors": [
+        {
+            "name": "Andrew Clark",
+            "email": "andrew.clark@techquity.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "aerocommerce/core": "^0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aero\\Modules\\NewModule" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\" : "tests/"
+        }
+    },
+    "extra": {
+        "laravel" : {
+            "providers": [
+                "Aero\\Modules\\NewModule\\Providers\\ServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.aerocommerce.com"
+        }
+    ]
+}

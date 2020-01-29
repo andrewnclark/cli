@@ -13,6 +13,7 @@ if (file_exists(__DIR__.'/../../autoload.php')) {
 
 $app = new Symfony\Component\Console\Application('Aero Commerce CLI Tool', '0.7.0');
 $app->add(new Aero\Cli\NewCommand);
+$app->add(new Aero\Cli\Module\NewModuleCommand);
 
 try {
     $app->run();
